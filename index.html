@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="/js/plugins/swiper/index.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" defer></script>
+    <script src="/js/plugins/swiper/index.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    <header class="header">
+        <nav class="header__navigation">
+            <a class="header__logo" href="/">
+                <img class="header__img" src="/images/logo/white-logo.svg" alt="Логотип компании ПАН">
+            </a>
+            <ul class="header__list">
+                <li class="header__item sub-menu-item">
+                    <button class="header__link descr" data-header-submenu-btn type="button"
+                        aria-label="открыть дополнительное меню">
+                        Пункт 1
+                    </button>
+                    <div class="sub-menu" data-header-submenu>
+                        <div class="sub-menu__wrap">
+                            <ul class="header__sub-list sub-list">
+                                <li class="sub-list__item">
+                                    <a class="sub-list__link" href="/">
+                                        <span class="sub-list__descr descr">Меню 1</span>
+                                        <span class="sub-list__text text">Покупайте и продавайте</span>
+                                    </a>
+                                </li>
+                                <li class="sub-list__item">
+                                    <a class="sub-list__link" href="/">
+                                        <span class="sub-list__descr descr">Меню 2</span>
+                                        <span class="sub-list__text text">Покупайте и продавайте</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__sub-list sub-list">
+                                <li class="sub-list__item">
+                                    <a class="sub-list__link" href="/">
+                                        <span class="sub-list__descr descr">Меню 1</span>
+                                        <span class="sub-list__text text">Покупайте и продавайте</span>
+                                    </a>
+                                </li>
+                                <li class="sub-list__item">
+                                    <a class="sub-list__link" href="/">
+                                        <span class="sub-list__descr descr">Меню 2</span>
+                                        <span class="sub-list__text text">Покупайте и продавайте</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__item"><a class="header__link descr" href="/">Пункт 2</a></li>
+                <li class="header__item"><a class="header__link descr" href="/">Пункт 3</a></li>
+                <li class="header__item"><a class="header__link descr" href="/">Пункт 4</a></li>
+                <li class="header__item"><a class="header__link descr" href="/">Пункт 5</a></li>
+            </ul>
+            <button class="header__button button button_red" type="button" aria-label="кнопка">Кнопка</button>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__wrap">
+                    <div class="hero__content">
+                        <h1 class="hero__title title">Недвижимость <br /> Санкт-Петербурга <br /> и Москвы</h1>
+                        <form class="hero__form">
+                            <div class="hero__inputs">
+                                <div class="hero__select">
+                                    <button class="hero__select-label text">Выбрать город</button>
+                                    <div class="hero__dropdown dropdown">
+                                        <button class="dropdown__button text">Выбрать город</button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item text" data-value="Москва">Москва</li>
+                                            <li class="dropdown__list-item text" data-value="Санкт-Петербург">
+                                                Санкт-Петербург
+                                            </li>
+                                            <li class="dropdown__list-item text" data-value="Владивосток">Владивосток
+                                            </li>
+                                            <li class="dropdown__list-item text" data-value="Оренбург">Оренбург</li>
+                                        </ul>
+                                        <input class="dropdown__input-hidden" type="text" name="select-category">
+                                    </div>
+                                </div>
+                                <div class="custom-input">
+                                    <label class="custom-input__label text" for="mail">Ваш e-mail</label>
+                                    <input class="custom-input__input text" id="mail" type="text"
+                                        placeholder="info@mail.ru">
+                                </div>
+                            </div>
+                            <button class="hero__button button button_red" type="button" aria-label="кнопка">
+                                Кнопка действия
+                            </button>
+                            <div class="checbox">
+                                <input class="checbox__input" id="policy" type="checkbox">
+                                <label class="checbox__label text" for="policy">
+                                    Отправляя нам данную форму вы соглашаетесь с <br />
+                                    <a href="/">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hero__img">
+                        <img src="/images/hero/Illustration.svg" alt="девушка оставляет заявку на компьютере">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="container">
+                <h2 class="slider__title title">Обычный слайдер</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider__cover">
+                                <img class="slider__img" src="/images/slider/slide-1.jpg" alt="">
+                                <img class="slider__star" src="/images/slider/3-star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__cover">
+                                <img class="slider__img" src="/images/slider/slide-2.jpg" alt="">
+                                <img class="slider__star" src="/images/slider/1-star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__cover">
+                                <img class="slider__img" src="/images/slider/slide-3.jpg" alt="">
+                                <img class="slider__star" src="/images/slider/4-star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__cover">
+                                <img class="slider__img" src="/images/slider/slide-1.jpg" alt="">
+                                <img class="slider__star" src="/images/slider/3-star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <h2 class="visually-hidden">Скрытый заголовок для скрин ридера</h2>
+                <div class="info__wrap">
+                    <div class="info__progressbar progressbar">
+                        <div class="progressbar__bar">
+                            <span class="progressbar__bar-line"></span>
+                            <span class="progressbar__bar-value descr"><span>5</span> %</span>
+                        </div>
+                        <button class="progressbar__button button button_red" data-percent-button>
+                            + <span>25</span> %
+                        </button>
+                    </div>
+                    <article class="info__article">
+                        <p class="info__light-text light-text">
+                            Большинство онкологических пациентов испытывают страх перед неизвестностью
+                            того, что их ожидает в процессе лечения рака.
+                        </p>
+                        <a class="info__link text" href="/">Подробнее</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container">
+                <h2 class="visually-hidden">Скрытый заголовок для скрин ридера</h2>
+                <div class="map__map" id="map"></div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="visually-hidden">Скрытый заголовок для скрин ридера</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <h2 class="advantages__sub-title sub-title">3,000</h2>
+                        <p class="advantages__text light-text">Агенств</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h2 class="advantages__sub-title sub-title">10,000</h2>
+                        <p class="advantages__text light-text">Партнеров</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h2 class="advantages__sub-title sub-title">80,000</h2>
+                        <p class="advantages__text light-text">Квартир в базе</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h2 class="advantages__sub-title sub-title">100+</h2>
+                        <p class="advantages__text light-text">Застройщиков</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h2 class="advantages__sub-title sub-title">200</h2>
+                        <p class="advantages__text light-text">Сотрудников</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <button class="footer__up-button text" data-up-button aria-label="Вверх страницы">Наверх</button>
+            </div>
+            <div class="footer__info">
+                <address class="footer__adress text">
+                    Санкт-Петербург, Владимирский пр., д. 3 лит. А, офис 701
+                </address>
+                <a class="footer__phone small-sub-title" href="tel:+78124456809">+ 7 (812) 445-68-09</a>
+                <div class="footer__callback">
+                    <a class="footer__callback-link text" href="/">Напишите нам</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
