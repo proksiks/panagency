@@ -2,19 +2,19 @@
   font-family: "Formular";
   font-style: normal;
   font-weight: 300;
-  src: local("Formular"), url("fonts/Formular-Light.woff") format("woff");
+  src: local("Formular"), url("../fonts/Formular-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Formular";
   font-style: normal;
   font-weight: 400;
-  src: local("Formular"), url("fonts/Formular-Medium.woff") format("woff");
+  src: local("Formular"), url("../fonts/Formular-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Formular";
   font-style: normal;
   font-weight: 700;
-  src: local("Formular"), url("fonts/Formular-Bold.woff") format("woff");
+  src: local("Formular"), url("../fonts/Formular-Bold.woff") format("woff");
 }
 
 :root {
