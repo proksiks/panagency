@@ -430,7 +430,7 @@ button.header__link::after {
   transform: translateY(-50%);
   width: 10px;
   height: 6px;
-  background-image: url("images/icons/white-arrow.svg");
+  background-image: url("../images/icons/white-arrow.svg");
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
 }
@@ -533,7 +533,7 @@ button.header__link::after {
   top: 4px;
   width: 21px;
   height: 15px;
-  background-image: url("images/icons/sofa.svg");
+  background-image: url("../images/icons/sofa.svg");
   background-repeat: no-repeat;
 }
 .sub-list__descr {
@@ -595,7 +595,7 @@ button.header__link::after {
   transform: translateY(-50%);
   width: 10px;
   height: 6px;
-  background-image: url("images/icons/white-arrow.svg");
+  background-image: url("../images/icons/white-arrow.svg");
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
 }
@@ -906,7 +906,7 @@ button.header__link::after {
   top: 6px;
   width: 13px;
   height: 11px;
-  background-image: url("images/icons/check-mark.svg");
+  background-image: url("../images/icons/check-mark.svg");
   transform: scale(0);
   transition: transform 0.15s ease-in-out;
 }
@@ -1017,7 +1017,7 @@ button.header__link::after {
   font-family: none;
   width: 7px;
   height: 12px;
-  background-image: url("images/icons/dark-arrow.svg");
+  background-image: url("../images/icons/dark-arrow.svg");
   margin-left: 3px;
 }
 .swiper-button-prev::after {
@@ -1025,7 +1025,7 @@ button.header__link::after {
   font-family: none;
   width: 7px;
   height: 12px;
-  background-image: url("images/icons/dark-arrow.svg");
+  background-image: url("../images/icons/dark-arrow.svg");
 }
 .swiper-button-next.swiper-button-disabled {
   opacity: 1;
@@ -1197,7 +1197,7 @@ button.header__link::after {
   top: 50%;
   width: 10px;
   height: 7px;
-  background-image: url("images/icons/light-dark-arrow.svg");
+  background-image: url("../images/icons/light-dark-arrow.svg");
   transform: translateY(-50%);
   transition: transform 0.3s ease;
 }
@@ -1452,7 +1452,7 @@ button.header__link::after {
   transform: translateY(-50%);
   width: 8px;
   height: 5px;
-  background-image: url("images/icons/small-arrow.svg");
+  background-image: url("../images/icons/small-arrow.svg");
 }
 .footer__info {
   display: flex;
